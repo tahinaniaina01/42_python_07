@@ -7,7 +7,7 @@
 #   By: trakotos <trakotos@student.42antananarivo.   +#+  +:+       +#+       #
 #                                                  +#+#+#+#+#+   +#+          #
 #   Created: 2026/04/10 22:42:39 by trakotos            #+#    #+#            #
-#   Updated: 2026/04/11 00:43:43 by trakotos           ###   ########.fr      #
+#   Updated: 2026/04/11 01:11:59 by trakotos           ###   ########.fr      #
 #                                                                             #
 # ########################################################################### #
 
@@ -81,11 +81,11 @@ class Shiftling(Creature, TransformCapability):
 
     def transform(self):
         self._attack = "performs a boosted strike!"
-        return "shifts into a sharper form!"
+        return f"{self.name} shifts into a sharper form!"
 
     def revert(self):
         self._attack = "attacks normally"
-        return "returns to normal."
+        return f"{self.name} returns to normal."
 
 
 class Morphagon(Creature, TransformCapability):
@@ -98,8 +98,8 @@ class Morphagon(Creature, TransformCapability):
 
     def transform(self):
         self._attack = "unleashes a devastating morph strike!"
-        return "morphs into a dragonic battle form!"
+        return f"{self.name} morphs into a dragonic battle form!"
 
     def revert(self):
         self._attack = "attacks normally"
-        return "stabilizes its form"
+        return f"{self.name} stabilizes its form"
