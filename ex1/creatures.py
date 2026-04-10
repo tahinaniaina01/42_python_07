@@ -7,7 +7,7 @@
 #   By: trakotos <trakotos@student.42antananarivo.   +#+  +:+       +#+       #
 #                                                  +#+#+#+#+#+   +#+          #
 #   Created: 2026/04/10 22:42:39 by trakotos            #+#    #+#            #
-#   Updated: 2026/04/11 01:11:59 by trakotos           ###   ########.fr      #
+#   Updated: 2026/04/11 01:16:04 by trakotos           ###   ########.fr      #
 #                                                                             #
 # ########################################################################### #
 
@@ -15,7 +15,7 @@ from abc import abstractmethod
 
 
 class Creature:
-    def __init__(self, name: str, type: str):
+    def __init__(self, name: str, type: str) -> None:
         self.name = name
         self.type = type
 
@@ -28,7 +28,7 @@ class Creature:
 
 
 class HealCapability:
-    def __init__(self):
+    def __init__(self) -> None:
         pass
 
     @abstractmethod
@@ -37,7 +37,7 @@ class HealCapability:
 
 
 class TransformCapability:
-    def __init__(self):
+    def __init__(self) -> None:
         pass
 
     @abstractmethod
@@ -79,11 +79,11 @@ class Shiftling(Creature, TransformCapability):
     def attack(self) -> str:
         return f"{self.name} {self._attack}"
 
-    def transform(self):
+    def transform(self) -> str:
         self._attack = "performs a boosted strike!"
         return f"{self.name} shifts into a sharper form!"
 
-    def revert(self):
+    def revert(self) -> str:
         self._attack = "attacks normally"
         return f"{self.name} returns to normal."
 
@@ -96,10 +96,10 @@ class Morphagon(Creature, TransformCapability):
     def attack(self) -> str:
         return f"{self.name} {self._attack}"
 
-    def transform(self):
+    def transform(self) -> str:
         self._attack = "unleashes a devastating morph strike!"
         return f"{self.name} morphs into a dragonic battle form!"
 
-    def revert(self):
+    def revert(self) -> str:
         self._attack = "attacks normally"
         return f"{self.name} stabilizes its form"

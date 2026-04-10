@@ -7,7 +7,7 @@
 #   By: trakotos <trakotos@student.42antananarivo.   +#+  +:+       +#+       #
 #                                                  +#+#+#+#+#+   +#+          #
 #   Created: 2026/04/10 22:42:39 by trakotos            #+#    #+#            #
-#   Updated: 2026/04/11 00:11:07 by trakotos           ###   ########.fr      #
+#   Updated: 2026/04/11 01:13:59 by trakotos           ###   ########.fr      #
 #                                                                             #
 # ########################################################################### #
 
@@ -15,7 +15,7 @@ from abc import abstractmethod
 
 
 class Creature:
-    def __init__(self, name: str, type: str):
+    def __init__(self, name: str, type: str) -> None:
         self.name = name
         self.type = type
 

@@ -7,7 +7,7 @@
 #   By: trakotos <trakotos@student.42antananarivo.   +#+  +:+       +#+       #
 #                                                  +#+#+#+#+#+   +#+          #
 #   Created: 2026/04/10 23:15:51 by trakotos            #+#    #+#            #
-#   Updated: 2026/04/10 23:38:32 by trakotos           ###   ########.fr      #
+#   Updated: 2026/04/11 01:14:35 by trakotos           ###   ########.fr      #
 #                                                                             #
 # ########################################################################### #
 
@@ -29,7 +29,7 @@ class CreatureFactory:
 
 
 class FlameFactory(CreatureFactory):
-    def __init__(self):
+    def __init__(self) -> None:
         super().__init__()
 
     def create_base(self) -> Creature:
@@ -40,7 +40,7 @@ class FlameFactory(CreatureFactory):
 
 
 class AquaFactory(CreatureFactory):
-    def __init__(self):
+    def __init__(self) -> None:
         super().__init__()
 
     def create_base(self) -> Creature:
