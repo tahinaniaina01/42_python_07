@@ -7,11 +7,11 @@
 #   By: trakotos <trakotos@student.42antananarivo.   +#+  +:+       +#+       #
 #                                                  +#+#+#+#+#+   +#+          #
 #   Created: 2026/04/10 23:15:51 by trakotos            #+#    #+#            #
-#   Updated: 2026/04/10 23:37:07 by trakotos           ###   ########.fr      #
+#   Updated: 2026/04/10 23:38:32 by trakotos           ###   ########.fr      #
 #                                                                             #
 # ########################################################################### #
 
-from creatures import Aquabub, Flameling, Pyrodon, Torragon, Creature
+from .creatures import Aquabub, Flameling, Pyrodon, Torragon, Creature
 from abc import abstractmethod
 
 
