@@ -7,15 +7,15 @@
 #   By: trakotos <trakotos@student.42antananarivo.   +#+  +:+       +#+       #
 #                                                  +#+#+#+#+#+   +#+          #
 #   Created: 2026/04/10 23:15:51 by trakotos            #+#    #+#            #
-#   Updated: 2026/04/11 01:14:35 by trakotos           ###   ########.fr      #
+#   Updated: 2026/04/11 01:49:31 by trakotos           ###   ########.fr      #
 #                                                                             #
 # ########################################################################### #
 
 from .creatures import Aquabub, Flameling, Pyrodon, Torragon, Creature
-from abc import abstractmethod
+from abc import abstractmethod, ABC
 
 
-class CreatureFactory:
+class CreatureFactory(ABC):
     def __init__(self) -> None:
         pass
 
