@@ -7,7 +7,7 @@
 #   By: trakotos <trakotos@student.42antananarivo.   +#+  +:+       +#+       #
 #                                                  +#+#+#+#+#+   +#+          #
 #   Created: 2026/04/10 23:15:51 by trakotos            #+#    #+#            #
-#   Updated: 2026/04/11 01:49:59 by trakotos           ###   ########.fr      #
+#   Updated: 2026/04/11 12:48:42 by trakotos           ###   ########.fr      #
 #                                                                             #
 # ########################################################################### #
 
@@ -32,7 +32,9 @@ class CreatureFactory(ABC):
         pass
 
     @abstractmethod
-    def create_evolved(self) -> Creature | HealCapability | TransformCapability:
+    def create_evolved(
+        self
+    ) -> Creature | HealCapability | TransformCapability:
         pass
 
 

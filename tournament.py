@@ -7,12 +7,14 @@
 #   By: trakotos <trakotos@student.42antananarivo.   +#+  +:+       +#+       #
 #                                                  +#+#+#+#+#+   +#+          #
 #   Created: 2026/04/11 07:33:32 by trakotos            #+#    #+#            #
-#   Updated: 2026/04/11 12:44:27 by trakotos           ###   ########.fr      #
+#   Updated: 2026/04/11 12:47:55 by trakotos           ###   ########.fr      #
 #                                                                             #
 # ########################################################################### #
 
 from typing import Any
-from ex2 import BattleStrategy, NormalStrategy, DefensiveStrategy, AggressiveStrategy
+from ex2 import (
+    BattleStrategy, NormalStrategy, DefensiveStrategy, AggressiveStrategy
+)
 from ex0 import FlameFactory, AquaFactory
 from ex1 import HealingCreatureFactory, TransformCreatureFactory
 

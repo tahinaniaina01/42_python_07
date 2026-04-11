@@ -7,7 +7,7 @@
 #   By: trakotos <trakotos@student.42antananarivo.   +#+  +:+       +#+       #
 #                                                  +#+#+#+#+#+   +#+          #
 #   Created: 2026/04/10 22:42:39 by trakotos            #+#    #+#            #
-#   Updated: 2026/04/11 11:46:23 by trakotos           ###   ########.fr      #
+#   Updated: 2026/04/11 12:49:55 by trakotos           ###   ########.fr      #
 #                                                                             #
 # ########################################################################### #
 
@@ -36,7 +36,9 @@ class Flameling(Creature):
 
 
 class Pyrodon(Creature):
-    def __init__(self, name: str = "Pyrodon", type: str = "Fire/Flying") -> None:
+    def __init__(
+        self, name: str = "Pyrodon", type: str = "Fire/Flying"
+    ) -> None:
         super().__init__(name, type)
 
     def attack(self) -> str:

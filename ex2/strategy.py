@@ -7,7 +7,7 @@
 #   By: trakotos <trakotos@student.42antananarivo.   +#+  +:+       +#+       #
 #                                                  +#+#+#+#+#+   +#+          #
 #   Created: 2026/04/11 01:48:40 by trakotos            #+#    #+#            #
-#   Updated: 2026/04/11 08:20:34 by trakotos           ###   ########.fr      #
+#   Updated: 2026/04/11 12:50:53 by trakotos           ###   ########.fr      #
 #                                                                             #
 # ########################################################################### #
 
@@ -16,7 +16,7 @@ from typing import Any
 
 
 class BattleStrategy(ABC):
-    def __init__(self):
+    def __init__(self) -> None:
         super().__init__()
 
     @abstractmethod

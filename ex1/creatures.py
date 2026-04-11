@@ -7,7 +7,7 @@
 #   By: trakotos <trakotos@student.42antananarivo.   +#+  +:+       +#+       #
 #                                                  +#+#+#+#+#+   +#+          #
 #   Created: 2026/04/10 22:42:39 by trakotos            #+#    #+#            #
-#   Updated: 2026/04/11 01:49:44 by trakotos           ###   ########.fr      #
+#   Updated: 2026/04/11 12:49:26 by trakotos           ###   ########.fr      #
 #                                                                             #
 # ########################################################################### #
 
@@ -61,7 +61,9 @@ class Sproutling(Creature, HealCapability):
 
 
 class Bloomelle(Creature, HealCapability):
-    def __init__(self, name: str = "Bloomelle", type: str = "Grass/Fairy ") -> None:
+    def __init__(
+        self, name: str = "Bloomelle", type: str = "Grass/Fairy"
+    ) -> None:
         super().__init__(name, type)
 
     def heal(self) -> str:
@@ -89,7 +91,9 @@ class Shiftling(Creature, TransformCapability):
 
 
 class Morphagon(Creature, TransformCapability):
-    def __init__(self, name: str = "Morphagon", type: str = "Normal/Drago") -> None:
+    def __init__(
+        self, name: str = "Morphagon", type: str = "Normal/Drago"
+    ) -> None:
         super().__init__(name, type)
         self._attack = "attacks normally."
 

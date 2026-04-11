@@ -7,7 +7,7 @@
 #   By: trakotos <trakotos@student.42antananarivo.   +#+  +:+       +#+       #
 #                                                  +#+#+#+#+#+   +#+          #
 #   Created: 2026/04/10 22:39:06 by trakotos            #+#    #+#            #
-#   Updated: 2026/04/10 23:50:06 by trakotos           ###   ########.fr      #
+#   Updated: 2026/04/11 12:48:22 by trakotos           ###   ########.fr      #
 #                                                                             #
 # ########################################################################### #
 
@@ -28,7 +28,9 @@ def test_factory(creature: CreatureFactory) -> None:
         print(f"Error: {error}")
 
 
-def test_battle(flame_factory: FlameFactory, aqua_factory: AquaFactory) -> None:
+def test_battle(
+    flame_factory: FlameFactory, aqua_factory: AquaFactory
+) -> None:
     print("Testing battle")
     creture1 = flame_factory.create_base()
     creture2 = aqua_factory.create_base()
