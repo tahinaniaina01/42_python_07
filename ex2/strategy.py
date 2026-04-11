@@ -7,7 +7,7 @@
 #   By: trakotos <trakotos@student.42antananarivo.   +#+  +:+       +#+       #
 #                                                  +#+#+#+#+#+   +#+          #
 #   Created: 2026/04/11 01:48:40 by trakotos            #+#    #+#            #
-#   Updated: 2026/04/11 07:25:39 by trakotos           ###   ########.fr      #
+#   Updated: 2026/04/11 08:20:34 by trakotos           ###   ########.fr      #
 #                                                                             #
 # ########################################################################### #
 
@@ -41,6 +41,11 @@ class NormalStrategy(BattleStrategy):
     def acte(self, creature: Any) -> None:
         if self.is_valid(creature):
             print(creature.attack())
+        else:
+            raise Exception(
+                f"Invalid Creature '{creature.__class__.__name__}'"
+                " for this normal strategy"
+            )
 
 
 class AggressiveStrategy(BattleStrategy):
@@ -64,6 +69,11 @@ class AggressiveStrategy(BattleStrategy):
             print(creature.attack())
             print(creature.transform())
             print(creature.revert())
+        else:
+            raise Exception(
+                f"Invalid Creature '{creature.__class__.__name__}'"
+                " for this aggressive strategy"
+            )
 
 
 class DefensiveStrategy(BattleStrategy):
@@ -81,3 +91,8 @@ class DefensiveStrategy(BattleStrategy):
         if self.is_valid(creature):
             print(creature.attack())
             print(creature.heal())
+        else:
+            raise Exception(
+                f"Invalid Creature '{creature.__class__.__name__}'"
+                " for this defensive strategy"
+            )

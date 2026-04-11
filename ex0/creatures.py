@@ -7,7 +7,7 @@
 #   By: trakotos <trakotos@student.42antananarivo.   +#+  +:+       +#+       #
 #                                                  +#+#+#+#+#+   +#+          #
 #   Created: 2026/04/10 22:42:39 by trakotos            #+#    #+#            #
-#   Updated: 2026/04/11 01:49:14 by trakotos           ###   ########.fr      #
+#   Updated: 2026/04/11 11:46:23 by trakotos           ###   ########.fr      #
 #                                                                             #
 # ########################################################################### #
 
@@ -28,7 +28,7 @@ class Creature(ABC):
 
 
 class Flameling(Creature):
-    def __init__(self, name: str = "Flameling", type: str = "Unknow") -> None:
+    def __init__(self, name: str = "Flameling", type: str = "Fire") -> None:
         super().__init__(name, type)
 
     def attack(self) -> str:
@@ -36,7 +36,7 @@ class Flameling(Creature):
 
 
 class Pyrodon(Creature):
-    def __init__(self, name: str = "Pyrodon", type: str = "Unknow") -> None:
+    def __init__(self, name: str = "Pyrodon", type: str = "Fire/Flying") -> None:
         super().__init__(name, type)
 
     def attack(self) -> str:
@@ -44,7 +44,7 @@ class Pyrodon(Creature):
 
 
 class Aquabub(Creature):
-    def __init__(self, name: str = "Aquabub", type: str = "Unknow") -> None:
+    def __init__(self, name: str = "Aquabub", type: str = "Water") -> None:
         super().__init__(name, type)
 
     def attack(self) -> str:
@@ -52,7 +52,7 @@ class Aquabub(Creature):
 
 
 class Torragon(Creature):
-    def __init__(self, name: str = "Torragon", type: str = "Unknow") -> None:
+    def __init__(self, name: str = "Torragon", type: str = "Water") -> None:
         super().__init__(name, type)
 
     def attack(self) -> str:

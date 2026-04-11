@@ -7,7 +7,7 @@
 #   By: trakotos <trakotos@student.42antananarivo.   +#+  +:+       +#+       #
 #                                                  +#+#+#+#+#+   +#+          #
 #   Created: 2026/04/10 23:15:51 by trakotos            #+#    #+#            #
-#   Updated: 2026/04/11 01:49:31 by trakotos           ###   ########.fr      #
+#   Updated: 2026/04/11 11:46:21 by trakotos           ###   ########.fr      #
 #                                                                             #
 # ########################################################################### #
 
@@ -33,10 +33,10 @@ class FlameFactory(CreatureFactory):
         super().__init__()
 
     def create_base(self) -> Creature:
-        return Flameling(type="Fire")
+        return Flameling()
 
     def create_evolved(self) -> Creature:
-        return Pyrodon(type="Fire/Flying")
+        return Pyrodon()
 
 
 class AquaFactory(CreatureFactory):
@@ -44,7 +44,7 @@ class AquaFactory(CreatureFactory):
         super().__init__()
 
     def create_base(self) -> Creature:
-        return Aquabub(type="Water")
+        return Aquabub()
 
     def create_evolved(self) -> Creature:
-        return Torragon(type="Water")
+        return Torragon()
